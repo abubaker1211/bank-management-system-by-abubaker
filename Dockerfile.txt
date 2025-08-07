@@ -1,0 +1,11 @@
+# Use a lightweight OpenJDK image
+FROM openjdk:17-jdk-slim
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy your exact jar file into the container
+COPY target/bank-management-syatem-by-abubaker.jar app.jar
+
+# Run the jar file
+ENTRYPOINT ["java", "-jar", "app.jar"]
