@@ -12,18 +12,17 @@
         <class>com.Bank.Entity.AdminDetails</class>
 
         <properties>
-<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
             <property name="javax.persistence.jdbc.url" value="${DATABASE_URL}"/>
-<property name="javax.persistence.jdbc.user" value="${DATABASE_USERNAME}"/>
-<property name="javax.persistence.jdbc.password" value="${DATABASE_PASSWORD}"/>
+            <property name="javax.persistence.jdbc.user" value="${DATABASE_USERNAME}"/>
+            <property name="javax.persistence.jdbc.password" value="${DATABASE_PASSWORD}"/>
 
-
-            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-
-            <!-- EclipseLink specific properties -->
-            <property name="eclipselink.jdbc.exclusive-connection.mode" value="Transactional"/>
-            <property name="eclipselink.logging.level" value="FINE"/>
-            <property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
+            <!-- This property is for Hibernate's DDL generation (schema creation) -->
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <!-- This property tells Hibernate to show the SQL in logs -->
+            <property name="hibernate.show_sql" value="true"/>
+            <!-- This property is for Hibernate's dialect -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
         </properties>
     </persistence-unit>
 </persistence>
