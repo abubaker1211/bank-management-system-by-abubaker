@@ -10,9 +10,11 @@
         <class>com.Bank.Entity.AdminDetails</class>
 
         <properties>
-<property name="javax.persistence.jdbc.url" value="jdbc:mysql://${MYSQL_ADDON_HOST}:${MYSQL_ADDON_PORT}/${MYSQL_ADDON_DB}"/>
-<property name="javax.persistence.jdbc.user" value="${MYSQL_ADDON_USER}"/>
-<property name="javax.persistence.jdbc.password" value="${MYSQL_ADDON_PASSWORD}"/>
+<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
+            <property name="javax.persistence.jdbc.url" value="${DATABASE_URL}"/>
+<property name="javax.persistence.jdbc.user" value="${DATABASE_USERNAME}"/>
+<property name="javax.persistence.jdbc.password" value="${DATABASE_PASSWORD}"/>
+
 
             <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
 
