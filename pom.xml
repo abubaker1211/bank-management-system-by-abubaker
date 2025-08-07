@@ -4,6 +4,10 @@
   <groupId>com</groupId>
   <artifactId>Bank_Management_System_Using_SpringWebMvc_SpringDataJPA</artifactId>
   <packaging>war</packaging>
+  <build>
+    <finalName>bank-management-system</finalName> <!-- This sets your WAR name -->
+</build>
+
   <version>0.0.1-SNAPSHOT</version>
   <name>Bank_Management_System_Using_SpringWebMvc_SpringDataJPA Maven Webapp</name>
   <url>http://maven.apache.org</url>
@@ -19,7 +23,8 @@
     <artifactId>eclipselink</artifactId>
     <version>2.5.0</version>
 </dependency>
- <dependency>
+    
+     <dependency>
     <groupId>com.mysql</groupId>
     <artifactId>mysql-connector-j</artifactId>
     <version>8.1.0</version>
@@ -43,7 +48,5 @@
     <version>5.3.34</version>
 </dependency>
   </dependencies>
-  <build>
-    <finalName>Bank_Management_System_Using_SpringWebMvc_SpringDataJPA</finalName>
-  </build>
+ 
 </project>
