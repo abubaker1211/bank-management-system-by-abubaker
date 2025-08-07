@@ -10,9 +10,10 @@
         <class>com.Bank.Entity.AdminDetails</class>
 
         <properties>
-<property name="javax.persistence.jdbc.url" value="jdbc:mysql://bwabqpdmbdiybu1kgmfd-mysql.services.clever-cloud.com:3306/bwabqpdmbdiybu1kgmfd"/>
-            <property name="javax.persistence.jdbc.user" value="ubb3tt8wb1xm9mua"/>
-            <property name="javax.persistence.jdbc.password" value="7jhMzgWuf41yCAkOROkY"/>
+<property name="javax.persistence.jdbc.url" value="jdbc:mysql://${MYSQL_ADDON_HOST}:${MYSQL_ADDON_PORT}/${MYSQL_ADDON_DB}"/>
+<property name="javax.persistence.jdbc.user" value="${MYSQL_ADDON_USER}"/>
+<property name="javax.persistence.jdbc.password" value="${MYSQL_ADDON_PASSWORD}"/>
+
             <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
 
             <!-- EclipseLink specific properties -->
